@@ -36,7 +36,7 @@ class Point:
         return math.sqrt((self.x - p.x)**2 + (self.y - p.y)**2)
 
     def __eq__(self, autre_point: Point) -> bool:
-        return self.x == autre_point.x & self.y == autre_point.y
+        return self.x == autre_point.x and self.y == autre_point.y
 
     def homothetie(self, k):
         self.x *= k
