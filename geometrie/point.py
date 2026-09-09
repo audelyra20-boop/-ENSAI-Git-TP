@@ -14,6 +14,10 @@ class Point:
     Methodes:
     r(): coordonnée polaire, rayon
     t(): cooordonnée polaire, angle
+    distance(Point p): distance entre deux points
+    homothetie(k): homothetie de rapport k
+    translation(dx, dy): translation de dx en x et dy en x
+    
     """
 
     def __init__(self, x: float, y: float):
