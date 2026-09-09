@@ -27,7 +27,7 @@ class Point:
         if self.x == 0:
             return "Angle non défini"
 
-        return math.atan(self.y/self.x)
+        return math.atan2(self.y, self.x)
 
     def __str__(self):
         return f"({self.x},{self.y})"
