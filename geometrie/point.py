@@ -8,16 +8,15 @@ class Point:
     Classe abstraite représentant un Point.
 
     Attributes:
-        x(float) : coordonée en abscisse
-        y(float) : coordonnée en ordonnee
+        x(float) : coordonnee en abscisse
+        y(float) : coordonnee en ordonnee
 
     Methodes:
-    r(): coordonnée polaire, rayon
-    t(): cooordonnée polaire, angle
+    r(): coordonnee polaire, rayon
+    t(): cooordonnee polaire, angle
     distance(Point p): distance entre deux points
     homothetie(k): homothetie de rapport k
     translation(dx, dy): translation de dx en x et dy en x
-    
     """
 
     def __init__(self, x: float, y: float):
@@ -52,7 +51,7 @@ class Point:
 
 
 if __name__ == "__main__":
-    p1 = Point(1, 2)
+    p1 = Point(1.00, 2)
     p2 = Point(1, 2)
     print(p1)
     print(f"Distance entre p1 et p2 : {p1.distance(p2)}")
