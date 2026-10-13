@@ -20,3 +20,15 @@ CREATE TABLE game (
     id_winner    INTEGER REFERENCES player(id_player),
     detail       VARCHAR(100),
     timestamp    TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+CREATE TEMP TABLE station_status (
+    station_id              INTEGER NOT NULL,
+    last_reported           TIMESTAMPTZ NOT NULL,
+    num_bike_available      INTEGER,
+    num_bike_elec_available INTEGER,
+    num_docks_available     INTEGER,
+    is_installed            BOOLEAN,
+    is_renting              BOOLEAN,
+    is_returning            BOOLEAN,
+    PRIMARY KEY (station_id, last_reported)
+);
